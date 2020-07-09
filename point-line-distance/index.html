@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>点到线段/直线的距离</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+    <style>
+      #dist1 { color: red }
+      #dist2 { color: green }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>点到线段/直线的距离 <sub>by gltjk</sub></h1>
+      <canvas width="512" height="512"></canvas>
+      <div>
+        <div>P到线段QR的距离：<span id="dist1">0</span></div>
+        <div>P到直线QR的距离：<span id="dist2">0</span></div>
+        <div>
+          动点：
+          <input type="radio" name="point" value="P" checked>
+          <label for="huey">P (<span id="P"></span>)</label>
+          <input type="radio" name="point" value="Q">
+          <label for="huey">Q (<span id="Q"></span>)</label>
+          <input type="radio" name="point" value="R">
+          <label for="huey">R (<span id="R"></span>)</label>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

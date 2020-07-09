@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>学习可视化</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <main id="app">
+      <h1>学习可视化 by gltjk</h1>
+      <ul>
+        <li v-for="[l, a] in links">
+          <a :href='a+"/"'>{{l}}</a>
+        </li>
+      </ul>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.0-beta.20/dist/vue.global.prod.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

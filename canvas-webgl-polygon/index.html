@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>用 Canvas 和 WebGL 画多边形</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
+    <style>
+      .canvases {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>用 Canvas 和 WebGL 画多边形 <sub>by gltjk</sub></h1>
+      <div id="buttons"></div>
+      <div class="canvases">
+        <div>
+          <h2>Canvas</h2>
+          <canvas width="512" height="512" id="canvas"></canvas>
+        </div>
+        <div>
+          <h2>WebGL</h2>
+          <canvas width="512" height="512" id="webgl"></canvas>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/tess2-ts@1.0.5/dist/tess2.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
